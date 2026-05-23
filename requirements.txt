@@ -1,0 +1,13 @@
+# GymnasiumTwo — Atari RL experiments (separate venv from Gynasium)
+setuptools
+wheel
+
+gymnasium==1.1.1
+ale-py>=0.9.0
+numpy>=1.24.0,<2.0.0
+matplotlib>=3.8.0
+opencv-python>=4.8.0
+torch>=2.2.0
+
+# After pip install -r requirements.txt, accept Atari ROM license (zsh: use quotes):
+#   pip install "gymnasium[accept-rom-license]"
