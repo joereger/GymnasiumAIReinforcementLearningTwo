@@ -61,4 +61,4 @@ GymnasiumTwo/
 
 ## Multi-root workspace
 
-Open `Gynasium/Gynasium.code-workspace` to edit Gynasium and GymnasiumTwo side by side; use a different Python interpreter per root.
+Open **`GymnasiumAgents/GymnasiumAgents.code-workspace`** (recommended) to work across the hub, Gynasium, and GymnasiumTwo. Use a different Python interpreter per root (`.venv` here vs `Gynasium/GymnasiumVENV`).

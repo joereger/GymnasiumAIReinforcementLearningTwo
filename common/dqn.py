@@ -45,6 +45,7 @@ class DQNAgent:
         buffer_size: int = 50_000,
         batch_size: int = 32,
         target_sync: int = 1_000,
+        epsilon_decay: float = 0.9995,
     ):
         self.device = device
         self.n_actions = n_actions
@@ -61,7 +62,7 @@ class DQNAgent:
 
         self.epsilon = 1.0
         self.epsilon_min = 0.05
-        self.epsilon_decay = 0.9995
+        self.epsilon_decay = epsilon_decay
 
     def select_action(self, state: np.ndarray) -> int:
         if random.random() < self.epsilon:
